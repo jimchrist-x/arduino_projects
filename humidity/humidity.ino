@@ -19,11 +19,20 @@ void loop() {
   if (hval>30) {
     digitalWrite(blue_led, HIGH);
   }
+  else {
+    digitalWrite(blue_led, LOW);
+  }
   if (hval>50) {
     digitalWrite(yel_led, HIGH);
   }
+  else {
+    digitalWrite(blue_led, LOW);
+  }
   if (hval>60) {
     digitalWrite(red_led, HIGH);
+  }
+  else {
+    digitalWrite(blue_led, LOW);
   }
   hval=0;
 }
